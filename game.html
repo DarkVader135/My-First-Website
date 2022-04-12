@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>small game</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script>
+        function win() {
+            alert("you win congratulations!!");
+        }
+        function lose() {
+            alert("sorry wrong answer :/");
+        }
+        function myquest() {
+            var x = document.getElementById("question");
+            var y = document.getElementById("answer1");
+            var z = document.getElementById("answer2");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+                y.style.display = "none";
+                z.style.display = "none";
+            }
+        }
+        function getanswer() {
+            var x = document.getElementById("answer1");
+            var y = document.getElementById("answer2");
+            if (x.style.display === "none" ) {
+                x.style.display = "block";
+                y.style.display = "block";
+            } else {
+                x.style.display = "none";
+                y.style.display = "none";
+            }
+        }
+      </script>
+</head>
+<style>
+    #question {
+        margin-bottom: 5%; 
+        font-size: 180%; 
+        display: none;
+    }
+    h1{
+        position: relative;
+        background-color: rgb(255, 136, 0);
+        background-size: 10%;
+        cursor: pointer;
+    }
+    p{
+        text-align: center;
+    }
+    p:hover{
+        color: rgb(1, 202, 1);
+    }
+    span{
+        background-color: rgb(0, 255, 21);
+        margin-top: 1%;
+        font-size: 140%;
+        display: none;
+    }
+    span:hover{
+        color: red;
+        cursor: pointer;
+    }
+    div:hover {
+        cursor: pointer;
+    }
+</style>
+<body>
+    <!-- <button onclick="myquest()">button used for debugging</button> -->
+    <h1><p onclick="myquest()">click me to reveal question</p></h1>
+    <div id="question" onclick="getanswer()"> i am lighter than the clouds always with you at day, what am i? (click on me to reveal the answer)</div>
+    <p><span id="answer1" onclick="win()">shadow</span> <span id="answer2" onclick="lose()">imagination</span></p>
+</body>
+</html>

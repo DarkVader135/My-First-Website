@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main page</title>
+</head> 
+<style>
+   @media (orientation: landscape) {
+       body {
+        background-image: url("background_landscape.jpg");
+        color: white;
+       }
+        span.link:hover{
+            color: red;
+            cursor: pointer;
+        }
+        li.link:hover {
+            cursor: pointer;
+            color: red;
+            background-color: grey;
+        }
+        h1{
+            text-align: center;
+            color: black;
+        }
+        a {
+            text-decoration: none;
+            color: rgb(0, 252, 63);
+        }
+        a:hover {
+            color: red;
+            cursor: pointer;
+        }
+        .images {
+            max-width: 2%;
+            height: auto;
+        }
+    }
+    @media (orientation: portrait) {
+        body {
+        background-image: url("background_portrait.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        color: rgb(255, 255, 255);
+       }
+        span.link:hover{
+            color: red;
+            cursor: pointer;
+        }
+        li.link:hover {
+            cursor: pointer;
+            color: red;
+            background-color: grey;
+            background-size: auto;
+        }
+        h1{
+            text-align: center;
+            border: 4mm ridge rgb(82, 40, 29);
+        }
+        a {
+            text-decoration: none;
+            color: rgb(0, 252, 63);
+        }
+        a:hover {
+            color: red;
+            cursor: pointer;
+        }
+        li {
+            text-align: center;
+            list-style-type: none;
+            margin-top: 3%;
+        }
+        .images {
+            max-width: 5%;
+            height: auto;
+        }
+        footer {
+            text-align: center;
+            border-color: rgb(255, 255, 255);
+            border: solid;
+            background-color: black;
+            
+        }
+    }
+</style>
+<body>
+    <h1> Welcome to my first website this is just a demo</h1>
+    <nav>- the following is my social media : </nav>
+    <div> </div>
+    <ul>
+        <li class="link"><img class="images" src="twitter.webp" alt="twitter image"> <a href="https://twitter.com" target="_blank"> <span style="color:aqua"> twitter</span> </a> </li>
+        <li class="link"><img class="images" src="youtube.png" alt="youtube image"> <a href ="https://youtube.com" target="_blank"> <span style="color:red"> youtube</span> </a> </li>
+        <li class="link"><img class="images" src="twitch.png" alt="twitch image"> <a href ="https://twitch.com" target="_blank"> <span style="color:blueviolet" target="_blank"> twitch</span> </a> </li>
+    </ul>
+    
+    <footer>
+        <div>signed on as the tos of user service 2022 &copy; copyright</div>
+        <div>email us at &quot;email_is_down@our_mail_address.com&quot;</div>
+        <div>support page <a class="link" href="support.html" target="_blank">&quot;click&nbsp;me&quot;<a></div>
+    </footer>
+</body>
+</html>
